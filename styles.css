@@ -1,0 +1,188 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+/* Reset some basic elements */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-section {
+  /* background: url('hero-bg.jpg') no-repeat center center/cover; */
+  background-image: linear-gradient(skyblue, white);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #007bff;
+  color: white;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Key Problems Solved Section */
+.problems-section, .metrics-section, .reviews-section, .features-section, .cta-section, .footer-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.problems-grid, .metrics-grid, .reviews-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.problem-item, .metric-item, .review-item {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.problems-grid img, .metrics-grid img, .reviews-grid img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+.card-item{
+  border: 1px solid rgb(3, 125, 173);
+  box-shadow: 0px 0px 10px 1px rgb(150, 149, 149);
+  border-radius: 5px;
+}
+.content-card{
+  height: 250px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid rgb(3, 125, 173);
+  box-shadow: 0px 0px 10px 1px rgb(150, 149, 149);
+  border-radius: 5px;
+}
+.content-card p{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* Features Section */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  background: #f0f0f0;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-button.active, .tab-button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #f0f0f0;
+  padding: 3rem 1rem;
+}
+.cta-section-btn{
+  background: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+/* Footer Section */
+.footer-section {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
